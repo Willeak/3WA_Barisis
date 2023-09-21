@@ -1,0 +1,350 @@
+@font-face {
+  font-family: "HighSpirited";
+  src: url("font/vers/High_Spirited-webfont.woff2") format("woff2"),
+    url("font/High_Spirited-webfont.woff") format("woff");
+}
+
+html {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("img/wallpaper_barisis.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  z-index: 10000;
+  position: absolute;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+  top: 0;
+  width: 100%;
+  max-height: 75px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.178);
+}
+
+nav button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+
+  margin-right: 30px;
+  height: 23px;
+  font-weight: 600;
+}
+
+button:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+li {
+  margin-right: 30px;
+  height: 23px;
+  font-weight: 600;
+}
+
+#logo {
+  position: absolute;
+  left: 0;
+  width: 150px;
+  z-index: 999;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+#mainFirstPage {
+  display: flex;
+  margin-top: 76px;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-top: 150px;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  height: 100%;
+  color: #ffffff;
+  font-family: "HighSpirited";
+  font-weight: 100;
+  font-size: 80px;
+  text-shadow: 5px 5px 8px rgb(0, 0, 0);
+}
+
+#mainFirstPage p {
+  font-size: 50px;
+}
+
+footer {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+  width: 100%;
+  box-shadow: 10px -7px 5px rgba(0, 0, 0, 0.178);
+}
+
+.footer2 {
+  position: absolute;
+}
+
+footer div {
+  max-width: 550px;
+}
+
+ul#menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  margin-right: 200px;
+  padding-bottom: 15px;
+  display: none;
+  position: absolute;
+  right: 0;
+  width: 300px;
+  background-color: #ffffff;
+  font-family: arial, sans-serif;
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px rgb(0, 0, 0);
+  z-index: 1000;
+}
+
+ul#menu li {
+  padding: 10px 0px 0px 0px;
+  margin-right: 0;
+}
+
+ul#menu li a {
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.3s;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+ul#menu li a:hover {
+  color: #1c8123;
+}
+
+#toggleMenuButton {
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  z-index: 1000;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.MainArticle h1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  color: #000000;
+  font-family: "HighSpirited";
+  font-size: 50px;
+  text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.404);
+}
+
+[aria-label]:focus-visible {
+  outline: 4px solid rgb(30, 255, 0);
+  background-color: #00ff0d49;
+  border-radius: 5px;
+}
+
+article {
+  height: 600px;
+  width: 40%;
+  background-color: #ffffffc0;
+  padding: 10px;
+  margin: 10px;
+}
+
+.ImgArticle {
+  width: 80%;
+  margin-top: 50px;
+}
+
+.container {
+  height: 500px;
+  width: 80%;
+  background-color: #ffffffe1;
+}
+
+#formulaire {
+  margin-top: 75px;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -50;
+}
+
+#formulaire .container form {
+  display: flex;
+  margin: 20px;
+  flex-direction: column;
+}
+
+#formulaire .container form:nth-child {
+  margin: 20px;
+}
+
+.debug {
+  margin-top: -1000px;
+}
+
+/* tablettes */
+@media screen and (max-width: 768px) {
+  /* body * {
+    color: blueviolet;
+  } */
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 5px;
+  }
+
+  nav ul li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  ul#menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
+    margin-right: 20px;
+    padding-bottom: 15px;
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 300px;
+    background-color: #ffffff;
+    font-family: arial, sans-serif;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgb(0, 0, 0);
+    z-index: 1000;
+
+    min-height: 489px;
+  }
+
+  ul#menu ul li {
+    justify-content: flex-start;
+    min-height: 489px;
+  }
+
+  #toggleMenuButton {
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 20px;
+    margin-right: 50px;
+  }
+
+  #mainFirstPage {
+    font-size: 300%;
+  }
+
+  .MainArticle article {
+    min-height: 353px;
+    height: 100%;
+    width: 90%;
+    background-color: #ffffffc0;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .ImgArticle {
+    margin-top: 20px;
+  }
+
+  footer {
+    position: relative;
+    bottom: 0;
+  }
+}
+
+/* téléphones*/
+@media screen and (max-width: 480px) {
+  body * {
+    color: RED;
+  }
+
+  #logo {
+    position: absolute;
+    left: 0;
+    width: 130px;
+    z-index: 999;
+    margin-left: -15px;
+  }
+
+  #mainFirstPage {
+    padding-top: 50px;
+    font-size: 230%;
+  }
+
+  .contact {
+    bottom: 70px;
+  }
+
+  footer div {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
